@@ -4,6 +4,7 @@ When sqlmodel is installed, SQLAlchemy and Pydantic are automatically installed.
 Files in this repository:
 pkg cfg:
 cfg_app.py: 		Toml application configuration
+
 db_config.py: 		data class for postgres configuarion
 cfg_app.py: 		reading the Tmol app configuration
 pkg data: 		testing json data file for initial Apis testing.
