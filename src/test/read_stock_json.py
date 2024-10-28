@@ -20,9 +20,10 @@ async def get_test_stocks() -> [StockBase] :
     inp_File = f"{data_folder}/josn_test.dat"
     async with aiof.open(inp_File, "r") as inp:
         json_inp_str= await inp.read()
-    print(f"Captured {inp_File}  Done")
+    print(f"Captured {inp_File}  Done:\n {json_inp_str}")
 
-    return json.loads(json_inp_str)['stocks']
+    #return json.loads(json_inp_str)['StockBase']
+    return json.loads(json_inp_str)
 
 
 async def old_get_test_stocks() -> [StockBase] :

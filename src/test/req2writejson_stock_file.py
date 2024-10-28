@@ -9,11 +9,11 @@ from src.cfg.cfg_app import config
 
 out_File=""
 async def make_json_file():
-    req_url=config['request_Server']['url'] #url="http://localhost:800/lisStock/"
+    req_url=config['request_Server_DB']['url'] #url="http://localhost:800/lisStock/"
     #out_json= requests.get(req_url).json()
     async with httpx.AsyncClient() as client:
         outr = await client.get(req_url)
-
+    #make a dict for the list so it can be searchable records stocks
     json_formatted_str =  json.dumps(outr.json(), indent=0)
     print(json_formatted_str)
     ## C:\Users\Public\py_dev\fastapi\test_SQLModel\src\test\req.py

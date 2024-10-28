@@ -1,7 +1,10 @@
 [data]
 data_folder="C:/Users/Public/py_dev/fastapi/test_SQLModel/src/data"
-[request_Server]
+[request_Server_DB]
 url="http://localhost:800/lisStock/"
+
+[request_Selec_from_json]
+url='http://localhost:800/select_stock_json/'           #'http://localhost:800/select_stock_json/test_stock_symb}'
 # To Do .......
 [PostgreSQL_DB]
 host="localhost"
