@@ -9,7 +9,7 @@ db_config.py: 		data class for postgres configuarion
 cfg_app.py: 		reading the Tmol app configuration
 pkg data: 		testing json data file for initial Apis testing.
 			json file for reading, searching, and writing APIs. The src Apis are in test pkg. 
-pkg model: 		hero model is the model from SQL Model Documentation: SQLModel
+pkg model: 		hero model is the model from SQL Model Documentation: SQLModel[https://sqlmodel.tiangolo.com/]
 			The hero model is used as guide.
 			The stock model is the one created in this project.
 pkg router: 		CRUD Apis routers configuration for here and stock models
